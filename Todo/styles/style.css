@@ -1,0 +1,97 @@
+*{
+    box-sizing: border-box;
+}
+
+body{
+    height: 100vh;
+    background-color: rgba(200, 211, 218, 0.91);
+}
+
+.container{
+    height: 90dvh;
+    display: flex;
+    align-items: center;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.title_principal{
+    font-weight: 700;
+    font-size: 49px;
+}
+
+.todo-container{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    font-size: 17px;
+}
+
+form button{
+    background-color: rgba(53, 125, 241, 0.933);
+    padding: 15px;
+    width:9vw;
+    border-style: none;
+    border-radius: 10px;
+    color: white;
+    margin-left: 30px;
+    font-size: 18px;
+    cursor: pointer;
+}
+
+form button:active{
+    transform: scale(0.96);
+}
+
+form input{
+    border: 1px solid rgba(15, 15, 15, 0.34); 
+    border-radius: 5px;
+    padding: 8px;
+    font-size: 19px;
+    width: 30vw;
+}
+
+.note{
+    display: flex;
+    justify-content: center;
+}
+
+.note ul{
+    list-style: none;
+    margin: 0;
+}
+
+li label{
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    flex-direction: row;
+    max-width: 350px;
+    overflow: hidden;
+}
+
+li {
+    position: relative;
+    padding-left: 30px; /* Deja espacio para el checkbox */
+  }
+  
+.is-completed {
+    position: absolute;
+    left: 0; /* Fija el checkbox a la izquierda */
+    top: 50%;
+    transform: translateY(-50%); /* Centra verticalmente */
+    width: 20px; /* Tamaño fijo */
+    height: 20px;
+}
+
+.note-container{
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+}
+
+.completed{
+    text-decoration: line-through;
+    color: rgba(44, 42, 42, 0.741);
+}

@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Todo</title>
+    <link rel="stylesheet" href="./styles/style.css">
+    <link rel="stylesheet" href="./styles/side.css">
+    <script type="module" src="/src/main.mjs"></script>
+</head>
+<body>
+    <main class="container">
+        <h1 class="title_principal">Todo</h1>
+
+        <section class="todo-container">
+            <form action="">
+                <input class="value-todo" type="text" placeholder="write your pending">
+                <button class="bttn-add-todo" type="submit" >Add</button>
+            </form>
+            
+            <div class="note-container">
+
+                <div class="side-container">
+                    <button class="menu-item all">All</button>
+                    <button class="menu-item pending">Pending</button>
+                    <button class="menu-item con-completed">Completed</button>
+                </div>
+
+                <div class="note">
+                    <ul class="list-note">
+                    </ul>
+                </div>
+            </div>
+        </section>
+    </main>
+</body>
+</html>
