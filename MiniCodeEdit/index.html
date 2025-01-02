@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MiniCodeEdit</title>
+    <link rel="stylesheet" href="style.css">
+    <script async src="main.js"></script>
+
+</head>
+<body>
+
+    <main class="container">
+        <section class="container-editors">
+
+            <div class="container-environment">
+                <div class="coder-edit html5">
+                    <label>
+                        <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAC0AAAAtCAYAAAA6GuKaAAAAAXNSR0IArs4c6QAAA7lJREFUaEO9Wet52zAMBCepO0mSTZxJ4kzidJK6k9ibsIZIS3gSoOJWf5IvhMAjcDhATIHwKQBQuRX90/K7YTP0m7HnNnLLEHZs0F0OsWSA+jtp0Gl/acO+u2fvR3GD7We4zMJYnO56Kc5XzqIs2/+bx+P6Ew4cgT4AwOv+U6mKzWbpAgA3uu/m6RFp//QI+HcMmhZijseBz58StDyA+X7fGiN9jUF7Fru5oBjgSp6zhRDp+AhzUE3rAW0LNPXw1QURYqQx4s9/7NMhl5Ee7hMV4rdBz0V9wbmCNsp4VdwogliIloKw6o6cDNZlFlE53oaRjiNRzgD1KJygU3Q+zqFbDavavEJV6vQFAO+rY4e6UZDO95StoLsPdIrOjYfKX1/2I3MEWIJC/ZzuPfczikcEGgEjcNtxnCr+Jrf/uC8iSBrYU6WgnRj40WorDTTfjKew2fyITm+sY62weikA79XNInrIzR6sK3bsEjSj0A7w9BW/XkjUoz2sVr5UOJkHdLHup80caNVo2sZWKxegO4Wi4+fWjbmDE3vcXLZoSfGSXSs/DfLIyAJvpFUPT1sWtNHKcQKYGUv0xnVxwPreDaAaLXwAekDDKxQ4CIzD8THBBIt2eu4wenk20lYr16Dniu8ABa5iWgtbuMMfM0aWpO2ZPWjqLVVqUqoOL+hB62L7HQW8UjZgczkaFObAKYV0J5OpP0KBs/B5KgCfUaWM6bEFvbdbdmI5f1jFSi96GujNhWrh96I83af74dwxQ48eFQZadsWV9w61LwXgjUSRg24vtUAEtcHuPYxCfcS6828IeuW9s2em9ccjb3L2QOBuKxdli3Yv3R4lDdXgT/8pC7dnhpEfR4NLyGnVujsKES23lSf02PZIvj3JXo72W+oRtM1lWchJ/5bDdCrpG1JyW1wDSuwT13S50fRxpE0dOCqkQKNBgRtUfYjmoBwB6gsUwE8s7+s+oWYCdKDpQtLceG6HaFcPyHH5jWkJRHh10A8/dQHpfZXnaT2yLHCB6n2FpzidbuU5wDmSx3NHV43GIU9COKT4kyrgV3BCqeOueYL47N2HDiNHWzEZUaQxCJrb4xril3uP4vjPpVhbIWgcLz+glgNA5YpAewbfGIF6DUfvMgNatfQ49bQbrtcCBeCrNi3HaHZN9+Nvr3A0mh5B0ege4yYKgSPIWzQAzaZ6ltPEv5Ah/d/GAZaA6V7jJ383nefc/uf/dJE68SMS83ji3VkSGPYp0J6mBfuns6T85N58Gqe/E0cPqpfovzwSSEe/W8F4AAAAAElFTkSuQmCC"/>    
+                        HTML
+                    </label>
+                    <textarea spellcheck="false" id="html-code"></textarea>
+    
+                </div>
+                
+                <div class="coder-edit css">
+                    <label>
+                        <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAC0AAAAtCAYAAAA6GuKaAAAAAXNSR0IArs4c6QAAA/lJREFUaEOtWdFhWyEMPCapM0mdTZxJkk7iZBKnkzSdhFrAAwQSEnHfRz9iIZ3ESQc0wPEFAHFpxy1se0dQ1SSA/D/2TQg9kD02GqwD9NLHIwF89egjyNHmnUSq93r/fdF7K83nf4jF6PGIv921yX53USlKcKw77Zf5+ysanvClbb9SaSJ7pEqcEPHHs+sTTKMaGo/L35cDwjM9GNuXVBV+dOxkzlfqNWXDMugpbeaBKr1BETdMbQB8AXhaEcxT6U3Q3+dzWbkDWt34GxDPLigbPF74+wTwLP6uEn7ukCuAi+RkgwiJg6m5BUeDn3cAL3pSloxnbx3o6p6ckvNjcnbqpKci/HIBwrWNtmTxds/w1xL0chrkla/3f8hR37EJ9LLS2kzj8/P1Xvriu0Z4iwLo0Z0h4+ECxOswkuRqePjCbbqC1Gz4LkpjVI7D/kpNeBuIQNT4cDXnbESNdnxSv1AT9jbKEF9X6ByAm0thllmkIGOTUTHyZGoYBNDcsWdOk7AwKR/4vYA6VWOkVQPdWvopAjSru29DLrtVxsHV0c7Z2Qh68Jv8GIV0XQJSMEEVJ6C09alCNfScKvVBq2IZ3J0nUw0P/7Wgi6b0SLnJxYFHlXY2aJUey27k3JNLWUF7Jl85hKVe6eyZhMuj3lLE1tailA/gBpU0B+IZAbdB1w0JzymqpB8AqeePAVrj9IQ5eaxHzgBcItIRof8MCW9zyyxJk3LfxiuNmJusuZDUcAYtKaKNOK2iU55VFb1Zc+BxMhTQDBUDrU2h+WIrF/OCgKvBv0kohuNobrLiPwDXu4iMR97czM1GPcraxc5SW88fZQFrGhkEq4Au4Q0BG5sryTJBB+AUeynP+/YZEJ+Pt4sSgJL7WS4Nx72SwP7m5+8UUtiZdDccJHyGZ0gmm6L3Yy67fejXohznBOhvF8qbVqbrst8DPI81R6pSo9FsJvBddVwTRmpsmsEh3WKUiXGcChyVrtuzknICTg30UaaERDkCStQhCklPEl9AeBquXiJ1d0DfgHCeLqez1uYEgL/3Mflj4PeqfxLdVs3nqzT3YKviFFG4gU9J1vn2iag8HbBUF0dToSFs0OYcGgx4Au+I4UXjdL+yo4fZQJLsVl9tte5nKgQ3XZw7uGEGbeKtNtIc3q1vsw94L5L3gQCix/o7mOTB20fp3oxPRXRoB2gaeB8pD7Epo3IPwVHjgml/cZ9MQDzHgJ+IaaT1b3/HNSxftYRm9fzfydi/zj0ZX77MJM9FEU1ZXgJQhEYd4I+/dXyf7quVO+LiLoi5B4cntyEP7QLtGWebU0gtwLYi2onPmu0nwDxrM/2qIk79uEpAj2tnwV9mPPZatI21/wBUEGVGLPwEhAAAAABJRU5ErkJggg=="/>
+                        CSS
+                    </label>
+                    <textarea spellcheck="false" id="css-code"></textarea>
+                </div>
+    
+                <div class="coder-edit js">
+                    <label>
+                        <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAC0AAAAtCAYAAAA6GuKaAAAAAXNSR0IArs4c6QAAA+lJREFUaEPNWYlxGzEMXFYSpZLYlViuJE4lliuxUknUCSPwuQNIgCDPcZKb8VhzIsHFcvGQCmifACDyl+WF/AeAv+gmdWbdZdIAxw5bUlnAnrx/o4wZrtl57WK0PCdLn//MbIS1wwal8jWfbEni890ciqVnetpjZbudpQKiDJeDzlvyOAF4mLe5uv8z49PqVwC3LoiN6WcAr2LwzA4o0hoFk0hS+sBnABct82iazqD/saYB6KD1FBbOQNyYnt7MeT31I/VFFNAhcSnrRDYn5LEGem2042cBLW0GQ6oMNHm2R70OqTHaFlUH2cBNybRTEYU89jVXWbTSol0amrUmA1GRx5pUHcdm/N59fY5m9kiDhDWRPYagLRC9zTXf8+ijTFt6naHsuJjLzKOg1xeedmc4MH3p5ekCLhvqK+IhjQibpgU/e/S7rRlbBM1bYwXCNPWdk3rKM+yZvYeVp1c7OG7HqBUfCcQjQT99cvKMf1IgesuyNqFpGW73HEwtMHu6YrSB5hmUPivz7IZpUp5fmdFfzQrUIxOYW+kiTwF4upeJFzohNPYnQS9URMMBato30AGIuW9OPcwlZsDaQ6y/3/tnzv5fk4cAzXunAATW+BM4+iPm60PtMCWB+jwj4NKe0Xp5ZFaMhklVYMsagXhkLwvOcCnFon5V8dPJ5Ec+KYWH5tLFZ5pt93KeZiAZ6GSxguPvT0DctD5oU3zQbOE/BDpZrKBbrT/EfA5tMojYuMkyzgNxWAGMcMoa3eSRAnGnkt5zDddT/1M+/Xeh7TM9I4/Ojz6FXAPwWOnds0dyktgm/bIT9mbg+33AS0OFD9qXxxT1RiAKOATurd5pMKt01/KeCR90eTlZdIe6CU3Ls2MXiLtN9XojAFQRr0B4A2KRTJpEubpeFH3wjDgI8SYRXgPiJg/9jCtYIskQuKr1TSYBKMet/nB9kOltWl2sskN6paJQ8wbPHqRneuTtVR6fish9B84lq9C4ySsEnj3MBJGDqjBBoCkLEEMEnLNWZdZWSRpfb7BofnWmOlSrog7awHUOwKtz10ZAKIV1F4TMZi7LmXUKPg5uG8bEQs7wBmuljCOD7nTcZY+WQc5BzgT7Q2Nryc5vZSea2Ze3tStdntN7yGxDYGiLKYXV6vZNND7S1xtiGv+z+PMlAFQdtavlA3l62DzbOXsqm7epVl9rBTRnWu7hvttDj8Yh7J/G6oiBpntq2C8BNrj9G8sxF7tR2zbJX6P2S8Cc2f9rFFGkpR4tujtWpgVSstB+zcAr3JyVVgwOjWaPIVoWa+k5SN5OSiuCaX2qs+xCnB5ygNtnn1WshxbwCFtcycLwGyQsmz7qb4e/AAAAAElFTkSuQmCC"/>
+                        JS
+                    </label>
+                    <textarea spellcheck="false" id="js-code"></textarea>
+                </div>
+            </div>
+
+            <section class="menu-language">
+                <button class="menu-environment op-html">HTML</button>
+                <button class="menu-environment op-css" >CSS</button>
+                <button class="menu-environment op-js" >JS</button>
+            </section>
+
+
+        </section>
+
+        <section class="container-output">
+            <label>Output</label>
+            <iframe id="output"></iframe>
+        </section>
+    </main>
+
+</body>
+</html>

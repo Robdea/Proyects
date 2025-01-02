@@ -3,11 +3,30 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/src/css/style.css">
     <title>Post</title>
+    <script type="module" src="./src/main.mjs"></script>
 </head>
 <body>
     <main class="container">
-        
+        <section class="sect">
+            <h1>Example post</h1>
+            <form action="" class="post-form">
+                <label for="post">Enter your post</label>
+                <input type="text" id="post" name="post" class="post-input"/>
+                <button type="submit">Post</button>
+            </form>
+        </section>
+        <section class="ur-post">
+            <h2>Your post</h2>
+
+            <input type="text" class="filter" placeholder="Search your post">
+            <button type="submit">Search</button>
+            
+            <ul aria-live="polite">
+                <!-- Posts will be dynamically inserted here -->
+            </ul>
+        </section>
     </main>
 </body>
 </html>

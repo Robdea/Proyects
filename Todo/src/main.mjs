@@ -1,11 +1,11 @@
-import {$,$$, statusBar, handleFilter} from "./utils.mjs"
+import {$,$$, statusBar, handleFilter, getValueText} from "./utils.mjs"
 import { createNote } from "./createNote.mjs"
 
 const menuItems = $$(".menu-item");
 const $form = $("form")
 const $listNote = $(".list-note")
 const $valueTodo = $(".value-todo");
-const $menuButtons = document.querySelectorAll('.menu-item'); // Todos los botones del menú
+const $menuButtons = document.querySelectorAll('.menu-item'); // Todos los checkbox del menú
 
 $form.addEventListener("submit", e =>{
     e.preventDefault()    
@@ -14,19 +14,20 @@ $form.addEventListener("submit", e =>{
     if(value){
 
         $menuButtons.forEach(button => {
-            button.addEventListener('click', (e) => {
+            button.addEventListener('click', e => {
+                // De esta forma se obtiene el filtro de las notas
                 const filter = e.target.classList.contains('pending')
-                    ? 'pending'
-                    : e.target.classList.contains('con-completed')
-                    ? 'completed'
-                    : 'all';
+                    ? 'pending' : e.target.classList.contains('con-completed')
+                    ? 'completed' : 'all';
         
                 // Notificar el filtro seleccionado a la función principal
                 handleFilter(filter, $listNote); // Función que filtra las notas
             });
         });
-
+        
+        //This function Create the element what function how note
         createNote($listNote, value)
+        // This event listener has how objective handle the checkbox value
         $listNote.addEventListener("click", e=>{
             if(e.target.closest(".is-completed")){
                 // const textNote = e.target.closest("li").querySelector(".note-text")
@@ -47,15 +48,3 @@ $form.addEventListener("submit", e =>{
 })
 // function what control the status bar
 statusBar(menuItems)
-
-const getValueText = (inputValue) =>{
-    const value = inputValue.value
-    inputValue.value = ""
-
-    if(!value.trim()){
-        return value= undefined
-    }else{
-        return value
-    }
-}
-
